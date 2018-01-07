@@ -1,0 +1,940 @@
+/********* FELLES **********/
+
+body {
+    margin: 0;
+}
+
+/******** SPLASH INDEX SITE MOBILE *********/
+
+#splash {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(splash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 4vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px
+    }
+    #splash .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+    }
+
+}
+
+/******** SPLASH INDEX SITE TABLET ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash {
+        background-image: url(splash-assets/tablet_portrait.jpg);
+        height: 133vw;
+    }
+    #splash .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 7vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+/****** SPLASH INDEX SITE DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash-assets/desktop.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash-assets/desktop_retina.jpg);
+        height: 56vw;
+    }
+}
+
+/********* INDEX SITE MENU ***********/
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    flex-basis: 350px;
+    flex-grow: 1;
+    height: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/****************** NAVBAR (INSIDE BURGER MENU) *****************/
+
+/* Dropdown Button */
+
+#nav {
+    background-color: transparent;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f0e6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+
+/******** BURGER MENU ICON ******/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/************* ART DECO SPLASH MOBILE ************/
+
+#splash_artdeco {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(artdeco_splash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash_artdeco .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 10vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+
+    #splash_artdeco {
+        background-image: url(artdeco_splash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px;
+    }
+
+    #splash_artdeco .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+
+    }
+}
+
+/******** ART DECO SPLASH TABLET ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash_artdeco {
+        background-image: url(artdeco_splash-assets/tablet_portrait.jpg);
+        height: 133vw;
+        margin-top: -100px;
+    }
+    #splash_artdeco .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 7vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash_artdeco {
+        background-image: url(artdeco_splash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+
+/****** ART DECO SPLASH DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash_artdeco {
+        background-image: url(artdeco_splash-assets/desktop.jpg);
+        height: 50vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash_artdeco {
+        background-image: url(artdeco_splash-assets/desktop_retina.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+
+/*********** TEXT AFTER SPLASH IMAGE ************/
+
+#texten {
+    display: block;
+    text-align: center;
+}
+
+.columnonetxt h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.columnonetxt h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.columntwotxt p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-align: center;
+    color: black;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
+a:active {
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+/********** FIRST PDF FILE ************/
+
+.responsive-object embed {
+    width: 60%;
+    height: 40vw;
+    text-align: center;
+}
+
+.responsive-object {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.web #slide_one {
+    text-align: center;
+    background-color: #f4f0e6;
+    display: block;
+    height: 100%;
+}
+
+.columntxt p {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 3vw;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+/********** SECOND PDF FILE ************/
+
+.web #slide_two {
+    text-align: center;
+    background-color: #f4f0e6;
+    display: block;
+}
+
+.columntxttwo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.columntxttwo {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+/********** THIRD PDF FILE ************/
+
+.web #slide_three {
+    text-align: center;
+    background-color: #f4f0e6;
+    display: block;
+}
+
+.columntxtthree h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.columntxtthree {
+
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/********** FOURTH PDF FILE (ANIMATION SIDE) ************/
+
+#slide_four {
+    text-align: center;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.columntxtfour h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.columntxtfour {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+/**************** BACKGROUND COLOR FOR ANIMASJON SITE *****************/
+
+.animation #slide_one {
+    background-color: #f5f5f5;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.animation #slide_two {
+    background-color: #f5f5f5;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.animation #slide_three {
+    background-color: #f5f5f5;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+
+/******************** ANIMATION SITE SPLASH IMAGE ***********************/
+
+#splash_animation {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(animasjonsplash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash_animation .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 10vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    #splash_animation {
+        background-image: url(animasjonsplash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px;
+    }
+    #splash_animation .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+
+    }
+}
+
+/******** SPLASH IMAGE ANIMATION TABLET ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash_animation .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 9vw;
+    }
+    #splash_animation {
+        background-image: url(animasjonsplash-assets/tablet_portrait.jpg);
+        height: 133vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash_animation {
+        background-image: url(animasjonsplash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+/****** SPLASH ANIMATION DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash_animation {
+        background-image: url(animasjonsplash-assets/desktop.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash_animation {
+        background-image: url(animasjonsplash-assets/desktop_retina.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+/**************** BACKGROUND COLOR FOR VIDEO SITE *****************/
+
+.video #slide_one {
+    background-color: #fee3ce;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.video #slide_two {
+    background-color: #fee3ce;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.video #slide_three {
+    background-color: #fee3ce;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+/******************** VIDEO SITE SPLASH IMAGE ***********************/
+
+#splash_video {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(videosplash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash_video .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 10vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    #splash_video {
+        background-image: url(videosplash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px;
+    }
+    #splash_video .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+
+    }
+}
+
+
+/******** VIDEO SPLASH IMAGE TABLET ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash_video .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 9vw;
+    }
+    #splash_video {
+        background-image: url(videosplash-assets/tablet_portrait.jpg);
+        height: 133vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash_video {
+        background-image: url(videosplash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+
+/****** SPLASH VIDEO DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash_video {
+        background-image: url(videosplash-assets/desktop.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash_video {
+        background-image: url(videosplash-assets/desktop_retina.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+/**************** ABOUT ME SITE ******************/
+
+#ommeg {
+    background-color: whitesmoke;
+    margin-top: -100px;
+}
+
+#ommeg img {
+    width: 28vw;
+    margin-left: 36vw;
+    margin-bottom: -10vw;
+}
+
+#ommeg h1 {
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: -3vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+#ommeg p {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+#cvtxt {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding-top: 5vw;
+    justify-content: space-between;
+    padding: 10vw;
+}
+
+/****************** PART TWO : ABOUT ME, THE TEXT PART *******************/
+
+.columnleft h2 {
+    margin-top: 0;
+    padding-bottom: 1vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border-bottom: 3px;
+    border-bottom-style: inset;
+    border-bottom-color: white;
+    padding-top: 3vw;
+}
+
+.columnleft p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.columnleft h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+
+}
+
+.columnright h2 {
+    margin-top: 0;
+    padding-bottom: 1vw;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border-bottom: 3px;
+    border-bottom-style: inset;
+    border-bottom-color: white;
+    padding-top: 3vw;
+}
+
+.columnright p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.columnright h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+/*************** BOTTOM COLUMNS *******************/
+
+.columnleftbottom h2 {
+    margin-top: 0;
+    padding-bottom: 1vw;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border-bottom: 3px;
+    border-bottom-style: inset;
+    border-bottom-color: white;
+    padding-top: 3vw;
+}
+
+.columnleftbottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.columnlefbottom h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+
+}
+
+.columnrightbottom h2 {
+    margin-top: 0;
+    padding-bottom: 1vw;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    border-bottom: 3px;
+    border-bottom-style: inset;
+    border-bottom-color: white;
+    padding-top: 3vw;
+}
+
+.columnrightbottom p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.columnrightbottom h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+/************** KEA APP SPLASH IMAGE*********/
+
+#splash_kea {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(keaeventsplash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash_kea .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 4vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    #splash_kea {
+        background-image: url(keaeventsplash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px
+    }
+    #splash_kea .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+
+    }
+
+}
+
+
+/******** SPLASH KEA APP TABLET ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash_kea {
+        background-image: url(keaeventsplash-assets/tablet_portrait.jpg);
+        height: 133vw;
+    }
+    #splash_kea .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 7vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash_kea {
+        background-image: url(keaeventsplash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+/****** SPLASH KEA APP DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash_kea {
+        background-image: url(keaeventsplash-assets/desktop.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash_kea {
+        background-image: url(keaeventsplash-assets/desktop_retina.jpg);
+        height: 56vw;
+    }
+}
+
+
+/*************** MOCKUP BILDE KEA APP/ REPUBLIKKEN *********************/
+
+#mockup img {
+    width: 100%;
+}
+
+#mockup video {
+    width: 20%;
+    height: auto;
+
+}
+
+.vid_kea {
+    background-color: #edeee9;
+    text-align: center;
+    padding: 3vw;
+}
+
+.vid_rep {
+    background-color: #d9d6ce;
+    text-align: center;
+    padding: 3vw;
+}
+
+
+/******** SPLASH IMAGE REPUBLIKKEN *********/
+
+#splash_rep {
+    width: 100vw;
+    height: 167vw;
+    background-image: url(republikkensplash-assets/mobile_portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+#splash_rep .logo img {
+    padding: 10px;
+    width: 6vw;
+    margin-left: 90vw;
+    padding-top: 4vw;
+
+}
+
+@media screen and (min-width: 0px) and (orientation: landscape) {
+    #splash_rep {
+        background-image: url(republikkensplash-assets/mobile_landscape.jpg);
+        height: 59vw;
+        width: 100vw;
+        margin-top: -100px
+    }
+    #splash_rep .logo img {
+        padding: 10px;
+        width: 6vw;
+        margin-left: 90vw;
+        padding-top: 6vw;
+
+    }
+}
+
+/******** SPLASH IMAGE TABLET REPBULIKKEN ********/
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    #splash_rep {
+        background-image: url(republikkensplash-assets/tablet_portrait.jpg);
+        height: 133vw;
+    }
+    #splash_rep .logo img {
+        padding: 10px;
+        width: 8vw;
+        margin-left: 87vw;
+        padding-top: 12vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (orientation: landscape) {
+    #splash_rep {
+        background-image: url(republikkensplash-assets/tablet_landscape.jpg);
+        height: 75vw;
+        margin-top: -100px;
+    }
+}
+
+/****** SPLASH IMAGE REPUBLIKKEN DESKTOP AND RETINA ********/
+
+@media screen and (min-width: 899px) and (orientation: landscape) {
+    #splash_rep {
+        background-image: url(republikkensplash-assets/desktop.jpg);
+        height: 56vw;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 2561px) and (orientation: landscape) {
+    #splash_rep {
+        background-image: url(republikkensplash-assets/desktop_retina.jpg);
+        height: 56vw;
+    }
+}
